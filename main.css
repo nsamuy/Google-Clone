@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.top-page {
+	min-width: 1070px;
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+.left-float {
+	float: left;
+}
+
+.right-float {
+	float: right;
+}
+
+/*Header styles*/
+
+header {
+	background: white;
+	height: 75px;
+}
+
+header ul {
+	font-size: small;
+	float: right;
+	padding-top: 16px;
+	padding-right: 30px;
+}
+
+header ul li {
+	display: inline-block;
+	float: left;
+	padding: 7px;
+}
+
+.top-link {
+	text-decoration: none;
+	color: #191919;
+}
+
+.top-link:hover {
+	text-decoration: underline;
+}
+
+.grid-icon {
+	background-image: url(images/grid.png);
+	background-repeat: no-repeat;
+	background-size: 90% auto;
+	background-position: 42% 42%;
+	text-indent: -9999px;
+	width: 30px;
+	padding-right: 18px;
+	padding-left: 6px;
+}
+
+.signin-button {
+	background-color: blue;
+	background-image: linear-gradient(to top, #0A4BFF 0%, #00A3EF 100%);
+	border-radius: 2px;
+	color: white;
+	padding: 9px 13px 8px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.logo {
+	background-image: url(images/google-logo.png);
+	background-repeat: no-repeat;
+	background-position: 50% 85%;
+	background-size: 280px;
+	height: 250px;
+}
+
+.logo p {
+	text-indent: -9999px;
+}
+
+.search-field {
+	text-align: center;
+}
+
+.search-field input[type="text"] {
+	width: 560px;
+	padding: 7px;
+	border: 1px solid #d9d9d9;
+	margin-bottom: 12px;
+	font-size: 13px;
+}
+
+.search-field input[type="text"]:hover {
+	border-color: #b3b3b3;
+}
+
+.search-field input[type="text"]:focus {
+	outline: none;
+	border-color: #0066ff;
+}
+
+.microphone {
+	background-image: url(images/microphone.png);
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-size: 24px auto;
+	background-repeat: no-repeat;
+	background-position: 50% 46%;
+	text-indent: -9999px;
+	position: relative;
+	right: 28px;
+}
+
+.search-field input[type="submit"] {
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	font-weight: bold;
+	border-radius: 2px;
+	color: #404040;
+	margin: 5px;
+	padding: 7px 7px;
+	font-size: small;
+}
+
+.search-field input[type="submit"]:hover {
+	border-color: #b3b3b3;
+	box-shadow:0 1px 1px #aaaaaa;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #f2f2f2;
+	color: #666666;
+	font-size: small;
+	height: 40px;
+	border-top: 1px solid #d9d9d9;
+}
+
+.bottom {
+	min-width: 1070px;
+}
+
+footer ul {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 14px 10px;
+}
+
+.footer-link {
+	text-decoration: none;
+	color: #666666;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
